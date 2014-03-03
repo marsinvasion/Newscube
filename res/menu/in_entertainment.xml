@@ -1,0 +1,36 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    
+	<item 
+	    android:id="@+id/tag"
+	    android:showAsAction="always"
+	    android:title="@string/tag"
+	    android:icon="@drawable/labels"
+	    />
+	<item
+        android:id="@+id/collections_list"
+        android:showAsAction="always"
+        android:title="@string/news_list"
+        android:icon="@drawable/collections_list">
+        
+	    <menu>
+	        <item android:id="@+id/trending_news" android:title="@string/trending_news" />
+	        <item android:id="@+id/latest_news" android:title="@string/latest_news" />
+            <item android:id="@+id/dna_entertainment" android:title="@string/DNA_Entertainment" />
+            <item android:id="@+id/glam_sham" android:title="@string/GlamSham" />
+            <item android:id="@+id/indian_express_entertainment" android:title="@string/Indian_Express_Entertainment" />
+            <item android:id="@+id/mid_day_entertainment" android:title="@string/Mid_day_Entertainment" />
+            <item android:id="@+id/reuters_india_entertainment" android:title="@string/Reuters_India_Entertainment" />
+            <item android:id="@+id/times_of_india_entertainment" android:title="@string/Times_of_India_Entertainment" />
+        </menu>
+	</item>
+	
+    <item
+        android:id="@+id/refresh"
+        android:showAsAction="always"
+        android:title="@string/refresh"
+        android:icon="@drawable/refresh"/>
+    
+	<item android:id="@+id/send_mail" android:title="@string/send_mail" android:icon="@drawable/email"/>
+	<item android:id="@+id/rate_app" android:title="@string/rate_app" android:icon="@drawable/rating"/>
+
+</menu>

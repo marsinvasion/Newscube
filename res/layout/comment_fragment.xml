@@ -1,0 +1,150 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+
+    <View
+        android:id="@+id/filler1"
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@color/LightGrey" />
+
+    <View
+        android:id="@+id/filler2"
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@color/LightGrey" />
+
+    <View
+        android:id="@+id/filler3"
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@color/LightGrey" />
+
+    <View
+        android:id="@+id/filler4"
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@color/LightGrey" />
+
+    <View
+        android:id="@+id/filler5"
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@color/LightGrey" />
+
+    <View
+        android:id="@+id/filler6"
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@color/LightGrey" />
+
+    <View
+        android:id="@+id/filler7"
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@color/LightGrey" />
+
+    <View
+        android:id="@+id/filler8"
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@color/LightGrey" />
+
+    <View
+        android:id="@+id/filler9"
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@color/LightGrey" />
+
+    <View
+        android:id="@+id/filler10"
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@color/LightGrey" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/comment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="2dp"
+            android:text="@string/sample_text" />
+
+        <TextView
+            android:id="@+id/display_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/comment"
+            android:layout_below="@id/comment"
+            android:padding="2dp"
+            android:text="@string/sample_text"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/gray"
+            android:textScaleX="0.5"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/comment_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/comment"
+            android:layout_toRightOf="@id/display_name"
+            android:padding="2dp"
+            android:text="@string/sample_text"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/gray"
+            android:textScaleX="0.5"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/comment_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/comment"
+            android:layout_toRightOf="@id/comment_score"
+            android:padding="2dp"
+            android:text="@string/sample_text"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/gray"
+            android:textScaleX="0.5"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/comment_reply"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/comment"
+            android:layout_toRightOf="@id/comment_time"
+            android:padding="2dp"
+            android:text="@string/reply"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/blue"
+            android:textStyle="italic" />
+
+    </RelativeLayout>
+
+</LinearLayout>

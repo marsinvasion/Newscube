@@ -1,0 +1,50 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    
+	<item 
+	    android:id="@+id/tag"
+	    android:showAsAction="always"
+	    android:title="@string/tag"
+	    android:icon="@drawable/labels"
+	    />
+	<item
+        android:id="@+id/collections_list"
+        android:showAsAction="always"
+        android:title="@string/news_list"
+        android:icon="@drawable/collections_list">
+        
+	    <menu>
+	        <item android:id="@+id/trending_news" android:title="@string/trending_news" />
+	        <item android:id="@+id/latest_news" android:title="@string/latest_news" />
+            <item android:id="@+id/asian_age" android:title="@string/Asian_Age" />
+            <item android:id="@+id/bbc_india" android:title="@string/BBC_India" />
+            <item android:id="@+id/cnn_ibn" android:title="@string/CNN_IBN" />
+            <item android:id="@+id/central_chronicle" android:title="@string/Central_Chronicle" />
+            <item android:id="@+id/dna" android:title="@string/DNA" />
+            <item android:id="@+id/deccan_herald" android:title="@string/Deccan_Herald" />
+            <item android:id="@+id/first_post" android:title="@string/First_Post" />
+            <item android:id="@+id/hindu" android:title="@string/Hindu" />
+            <item android:id="@+id/hindustan_times" android:title="@string/Hindustan_Times" />
+            <item android:id="@+id/india_today" android:title="@string/India_Today" />
+            <item android:id="@+id/indian_express" android:title="@string/Indian_Express" />
+            <item android:id="@+id/mid_day" android:title="@string/Mid_day" />
+            <item android:id="@+id/ndtv" android:title="@string/NDTV" />
+            <item android:id="@+id/one_india" android:title="@string/One_India" />
+            <item android:id="@+id/outlook_india" android:title="@string/Outlook_India" />
+            <item android:id="@+id/rediff" android:title="@string/Rediff" />
+            <item android:id="@+id/reuters_india" android:title="@string/Reuters_India" />
+            <item android:id="@+id/telegraph" android:title="@string/Telegraph" />
+            <item android:id="@+id/times_of_india" android:title="@string/Times_of_India" />
+            <item android:id="@+id/zee_news" android:title="@string/Zee_news" />
+        </menu>
+	</item>
+	
+    <item
+        android:id="@+id/refresh"
+        android:showAsAction="always"
+        android:title="@string/refresh"
+        android:icon="@drawable/refresh"/>
+    
+	<item android:id="@+id/send_mail" android:title="@string/send_mail" android:icon="@drawable/email"/>
+	<item android:id="@+id/rate_app" android:title="@string/rate_app" android:icon="@drawable/rating"/>
+
+</menu>

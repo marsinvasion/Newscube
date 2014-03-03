@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ak.newstag"
+    android:versionCode="20"
+    android:versionName="2.3.2" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="com.ak.newstag.permission.C2D_MESSAGE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="19" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/newspin"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".StartActivity"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="adjustPan" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SignInActivity"
+            android:label="@string/app_name">
+        </activity>
+        <activity
+            android:name=".INNewsActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".INEntertainmentActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".INFinanceActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".INSportsActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".INTechActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".SignOutActivity"
+            android:label="@string/app_name" >
+        </activity>
+
+        <activity
+            android:name=".BrowserActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/app_name"
+            android:theme="@style/FullscreenTheme" >
+        </activity>
+
+        <activity
+            android:name=".CommentTreeActivity"
+            android:excludeFromRecents="true"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:taskAffinity=""
+            android:exported="true"
+            >
+        </activity>
+        
+        <receiver
+            android:name=".receiver.GcmBroadcastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+
+                <category android:name="com.example.gcm" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name=".service.GcmIntentService" />
+        <service
+            android:name="com.ak.newstag.service.JsonService"
+            android:exported="false" />
+        <service
+            android:name="com.ak.newstag.service.TagJsonService"
+            android:exported="false" />
+        <service
+            android:name="com.ak.newstag.service.PutService"
+            android:exported="false" />
+        
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+    </application>
+
+</manifest>
