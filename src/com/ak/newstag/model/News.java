@@ -100,6 +100,7 @@ public class News implements Parcelable {
 		this.url = data[5];
 		this.id = data[6];
 		this.score = in.readInt();
+		this.comments = new Comment[0];
 		Parcelable[] parcelable = in.readParcelableArray(Comment.class
 				.getClassLoader());
 		if (parcelable != null && parcelable.length > 0) {
