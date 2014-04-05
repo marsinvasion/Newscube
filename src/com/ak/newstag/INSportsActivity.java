@@ -31,8 +31,8 @@ public class INSportsActivity extends INActivity {
 	private static final String TIMES_OF_INDIA = BASE_URL
 			+ "IN/sports/website/Times%20of%20India%20Sports";
 
-	private static final String TAG_URL = BASE_URL + "IN/tech/tag";
-	private static final String COMMENT_URL = BASE_URL + "IN/tech/comment";
+	private static final String TAG_URL = BASE_URL + "IN/sports/tag";
+	private static final String COMMENT_URL = BASE_URL + "IN/sports/comment";
 
 	private static final String[] category_array = new String[] { SPORTS, NEWS,
 			ENTERTAINMENT, FINANCE, TECH };
